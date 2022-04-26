@@ -38,44 +38,19 @@ and activate it via
 conda activate HEPFittingTutorial
 ```
 
-### LMU Bachelor projects
+### On LMU jupyterhub (for Bachelor course 2022)
 
-#### On kuhrios (for Belle II projects)
+Most tutorials should run when you start jupyterhub with the `root/6.24.02` environment.
 
-Most tutorials should run on top of the latest Belle II release which you can set up with
-
-```
-source ~/setup_belle2.sh
-```
-
-You can then install the additional packages used in this tutorial on top with
-
+Then you can install additional dependencies with
 ```
 pip3 install --user pyroofit pyhf iminuit mplhep
 ```
 
-You should then be able to run the examples in a jupyter notebook or in jupyter hub (on Jupyter hub, make sure you use the Belle II Kernel with the latest version).
-
-Note: Some of the packages have stopped supporting `python3.6`, so if you need the latest versions, maybe go for the [Generic installation with conda](#generic), e.g install Miniconda into your home directory.
-
-#### On gar-ws-etp* (for ATLAS projects)
-
-You can install the packages on top of the ROOT + python3.7 setup:
+For running the ROOT 6.26 RooFit example (optional) you can add the following line to `~/jupyterhub_environment.sh`:
 
 ```
-module load root/6.20.04_py3.7
+module load root/6.26.00
 ```
 
-To give newer versions of python packages you install as a user priority over the system environment, reset the `PYTHONPATH` to just contain ROOT
-
-```
-export PYTHONPATH=/software/opt/bionic/x86_64/root/6.20.04_py3.7/lib
-```
-
-Then you can install what is used in the tutorial with
-
-```
-pip install --user --upgrade pyroofit pyhf iminuit mplhep
-```
-
-Then you should be able to run the examples in a jupyter notebook.
+and then restart the jupyterhub server using the `python/3.9-2021.11` environment
