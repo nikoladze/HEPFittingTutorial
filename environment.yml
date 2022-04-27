@@ -4,9 +4,9 @@ channels:
   - defaults
 dependencies:
   - conda-ecosystem-user-package-isolation
-  - root
+  - root<=6.24
   - pip:
-      - jupyter
+      - jupyterlab
       - pandas
       - scipy
       - numpy
