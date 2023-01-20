@@ -273,7 +273,7 @@ criterion for exclusion.
 We get an upper limit of around 2 events, e.g. with this scan:
 
 ```
-model_b0 = pyhf.simplemodels.hepdata_like(
+model_b0 = pyhf.simplemodels.uncorrelated_background(
     signal_data=[1], bkg_data=[1e-10], bkg_uncerts=[0]
 )
 pyhf.infer.intervals.upperlimit([0] + model_b0.config.auxdata, model_b0, np.linspace(0, 5, 100))
