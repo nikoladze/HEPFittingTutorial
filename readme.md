@@ -45,7 +45,9 @@ Most tutorials should run when you start jupyterhub with the `root/6.24.02` envi
 
 Then you can install additional dependencies with
 ```
-pip3 install --user pyhf iminuit mplhep
+module load root/6.24.02
+pip install uproot
+pip install pyhf iminuit mplhep # only needed for the pyhf tutorials
 ```
 
 For running the ROOT 6.26 RooFit example (optional) you can add the following line to `~/jupyterhub_environment.sh`:
