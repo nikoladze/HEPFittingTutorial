@@ -26,7 +26,7 @@ Most tutorials should run when you start jupyterhub with the latest python envir
 To get a copy of the code, run the following in a terminal
 
 ```
-git clone https://github.com/nikoladze/HEPFittingTutorial.git
+git clone -b bachelor-tutorial-2024 https://github.com/nikoladze/HEPFittingTutorial.git
 ```
 
 For running the ROOT 6.26 RooFit example you can add `module load root/6.26.00` to `~/jupyterhub_environment.sh`:
