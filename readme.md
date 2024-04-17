@@ -35,7 +35,7 @@ For running the ROOT 6.26 RooFit example you can add `module load root/6.26.00` 
 echo "module load root/6.26.00" > ~/jupyterhub_environment.sh
 ```
 
-Then restart the jupyter server and select the `python/3.9-2021.11` environment.
+Then restart the jupyter server and select the `python/3.9-2021.11` environment. Keep in mind `~/jupyterhub_environment.sh` will be always loaded when you start a jupyterhub server, so you may want to delete/move the file when you don't need it anymore.
 
 For the pyhf tutorials (not covered in the course) you can install the additional dependencies via
 ```
