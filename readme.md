@@ -4,11 +4,6 @@ Originally by [Kilian Lieret](https://github.com/klieret)
 
 Jupyter notebooks preview is available [here](https://nbviewer.jupyter.org/github/nikoladze/HEPFittingTutorial/tree/bachelor-tutorial-2023/examples/jupyter_notebooks/).
 
-To run the tutorial, just click on:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nikoladze/HEPFittingTutorial/bachelor-tutorial-2023?filepath=examples%2Fjupyter_notebooks)
-
-
 ## Contents
 
 * Fitting basics: Minmize a cost function using ``scipy.optimize.minimize``
@@ -22,11 +17,17 @@ To run the tutorial, just click on:
 
 ## Setup instructions
 
-If you want to use what you learned in the tutorial on your projects later, here are some examples how you can setup the nescessary software:
+Here are some examples how you can setup the nescessary software:
 
 ### On LMU jupyterhub (for Bachelor course 2024)
 
 Most tutorials should run when you start jupyterhub with the latest python environment.
+
+To get a copy of the code, run the following in a terminal
+
+```
+git clone https://github.com/nikoladze/HEPFittingTutorial.git
+```
 
 For running the ROOT 6.26 RooFit example you can add `module load root/6.26.00` to `~/jupyterhub_environment.sh`:
 
